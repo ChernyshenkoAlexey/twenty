@@ -4,6 +4,8 @@ nixPkgs = ["procps"]
 [phases.build]
 cmds = ["yarn build"]
 
-[phases.deploy]
-cmds = ["yarn database:init:prod"]
+[phases.start]
+cmds = ["yarn database:init:prod && yarn start"]
+
+
 
