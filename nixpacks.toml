@@ -1,3 +1,5 @@
 [phases.setup]
 nixPkgs = ["procps"]
 
+[phases.build]
+cmds = ["yarn build"]
